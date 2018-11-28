@@ -1,0 +1,13 @@
+{
+  "name": "ui-components",
+  "_cacheHeaders": {
+    "ETag": "\"54361-56b3921f54209\"",
+    "Last-Modified": "Wed, 02 May 2018 13:33:30 GMT",
+    "Content-Length": "344929",
+    "Content-Type": "application/zip"
+  },
+  "_release": "e-tag:54361-56b",
+  "_source": "http://build/zoho/lyte_ui_component/milestones/master/LYTE_UI_COMPONENTS_V1_0_0/Lyte_ui_component.zip",
+  "_target": "*",
+  "_originalSource": "http://build/zoho/lyte_ui_component/milestones/master/LYTE_UI_COMPONENTS_V1_0_0/Lyte_ui_component.zip"
+}

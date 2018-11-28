@@ -1,0 +1,87 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/scrollbar/scrollbar.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{scrollbar}/ui-elements/scrollbar/scrollbar.variables.less";
+
+
+
+
+/* Loading custom themes */
+@import (optional) "../overrides/ui-elements/scrollbar.variables.less";
+
+
+
+/* CSS Common for all scrollbars */
+
+
+.lyteScrollBar{
+	overflow : hidden !important;
+	position : relative !important;
+}
+ .lyteScrollContainer{
+ 	.lyteScrollBarContainer();
+ 	position : absolute;
+ 	border-radius: @borderRadius;
+ 	 z-index : @zIndex;
+ }
+.lyteScrollContainer.verticalScroll{
+	.lyteScrollBarContainerVertical();
+  	width : @width;
+  	top : 0px;
+  	left : auto ;
+  	right : 0px;
+  	bottom : 0px;
+ 	height :  auto !important
+}
+.lyteScrollContainer.horizontalScroll{
+	.lyteScrollbarContainerHorizontal();
+	height : @height;
+ 	bottom : 0px;
+ 	top : auto;
+ 	left : 0px ;
+ 	right : 0px;
+ 	bottom : 0px;
+ 	width :  auto !important
+}
+.lyteScrollContainer div{
+	.lyteScrollBarContainerScrollDiv();
+	background: @background;
+	position : relative;
+	border-radius: @borderRadius;
+}
+.lyteScrollContainer.verticalScroll div{
+	width: auto !important;
+}
+.lyteScrollContainer.horizontalScroll div{
+	height: auto !important;
+}
+.lyteScrollContainer div:hover{
+	.lyteScrollContainerScrollDivHover();
+	background: @background;
+}
+.lyteScrollContainer.horizontalScroll.top{
+	.lyteScrollContainerHorizontalTop();
+	top : @top;
+ 	bottom : auto !important
+}
+.lyteScrollContainer.verticalScroll.left{
+	.lyteScrollContainerVerticalLeft();
+	left : @left;
+ 	right : auto !important
+}
+	           
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{scrollbar}/ui-elements/scrollbar/scrollbar.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/scrollbar.overrides.less";    

@@ -1,0 +1,7 @@
+lyte-search {
+	display: inline-block;
+}
+
+.lyteSearchHidden{
+	display: none !important;
+}

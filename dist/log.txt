@@ -1,0 +1,27 @@
+copying folder /Users/vignesh-pt2299/mickey/project1/routes to /Users/vignesh-pt2299/mickey/project1/dist/routes
+creating file /Users/vignesh-pt2299/mickey/project1/dist/routes/home.js
+copying file /Users/vignesh-pt2299/mickey/project1/routes/home.js => /Users/vignesh-pt2299/mickey/project1/dist/routes/home.js
+creating directory /Users/vignesh-pt2299/mickey/project1/dist/routes/index
+copying folder /Users/vignesh-pt2299/mickey/project1/routes/index to /Users/vignesh-pt2299/mickey/project1/dist/routes/index
+creating file /Users/vignesh-pt2299/mickey/project1/dist/routes/index/home.js
+copying file /Users/vignesh-pt2299/mickey/project1/routes/index/home.js => /Users/vignesh-pt2299/mickey/project1/dist/routes/index/home.js
+creating file /Users/vignesh-pt2299/mickey/project1/dist/routes/index.js
+copying file /Users/vignesh-pt2299/mickey/project1/routes/index.js => /Users/vignesh-pt2299/mickey/project1/dist/routes/index.js
+copying file /Users/vignesh-pt2299/mickey/project1/bower.json => /Users/vignesh-pt2299/mickey/project1/dist/bower.json
+copying file /Users/vignesh-pt2299/mickey/project1/index.html => /Users/vignesh-pt2299/mickey/project1/dist/index.html
+copying file /Users/vignesh-pt2299/mickey/project1/router.js => /Users/vignesh-pt2299/mickey/project1/dist/router.js
+
+Copying the consolidated files to /Users/vignesh-pt2299/mickey/project1/dist/app.jscopying file /Users/vignesh-pt2299/mickey/project1/adp/comps.js => /Users/vignesh-pt2299/mickey/project1/dist/adp/comps.js
+copying file /Users/vignesh-pt2299/mickey/project1/adp/comps.js => /Users/vignesh-pt2299/mickey/project1/dist/adp/comps.js
+copying file /Users/vignesh-pt2299/mickey/project1/adp/comps.js => /Users/vignesh-pt2299/mickey/project1/dist/adp/comps.js
+copying file /Users/vignesh-pt2299/mickey/project1/adp/comps.js => /Users/vignesh-pt2299/mickey/project1/dist/adp/comps.js
+copying file /Users/vignesh-pt2299/mickey/project1/adp/comps.js => /Users/vignesh-pt2299/mickey/project1/dist/adp/comps.js
+copying file /Users/vignesh-pt2299/mickey/project1/adp/comps.js => /Users/vignesh-pt2299/mickey/project1/dist/adp/comps.js
+copying file /Users/vignesh-pt2299/mickey/project1/routes/index/home.js => /Users/vignesh-pt2299/mickey/project1/dist/routes/index/home.js
+
+Copying the consolidated files to /Users/vignesh-pt2299/mickey/project1/dist/app.jscopying file /Users/vignesh-pt2299/mickey/project1/routes/index/home.js => /Users/vignesh-pt2299/mickey/project1/dist/routes/index/home.js
+
+Copying the consolidated files to /Users/vignesh-pt2299/mickey/project1/dist/app.js
+Copying the consolidated files to /Users/vignesh-pt2299/mickey/project1/dist/app.js
+Copying the consolidated files to /Users/vignesh-pt2299/mickey/project1/dist/app.js
+Copying the consolidated files to /Users/vignesh-pt2299/mickey/project1/dist/app.js

@@ -1,0 +1,21 @@
+{
+  "name": "lyte-framework",
+  "description": "CLIENT FRAMEWORK WITH COMPONENTS,ROUTER AND DATA LAYER",
+  "main": "testing.html",
+  "authors": [
+    "subramanian.chidambara <subramanian.chidambara@zohocorp.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "lyte" : "http://build/zoho/lyte/milestones/master/LYTE_V1_0_0/Lyte.zip"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+  }
+}
+  

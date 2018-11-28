@@ -1,0 +1,13 @@
+{
+  "name": "lyte-dom",
+  "_cacheHeaders": {
+    "ETag": "\"139a-5691668157ba2\"",
+    "Last-Modified": "Thu, 05 Apr 2018 09:17:19 GMT",
+    "Content-Length": "5018",
+    "Content-Type": "application/zip"
+  },
+  "_release": "e-tag:139a-5691",
+  "_source": "http://build/zoho/lyte_dom/milestones/master/LYTE_DOM_M1/Lyte_Dom.zip",
+  "_target": "*",
+  "_originalSource": "http://build/zoho/lyte_dom/milestones/master/LYTE_DOM_M1/Lyte_Dom.zip"
+}

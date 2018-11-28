@@ -1,0 +1,51 @@
+.lyteScrollBar{
+	overflow : hidden !important;
+	position : relative !important;
+	width : 100%;
+	height: 100%;
+}
+ .lyteScrollContainer{
+ 	position : absolute;
+ 	border-radius: 2px;
+ 	 z-index : 9999
+ }
+.lyteScrollContainer.verticalScroll{
+  	width : 10px;
+  	top : 0px;
+  	left : auto ;
+  	right : 0px;
+  	bottom : 0px;
+ 	height : auto !important
+}
+.lyteScrollContainer.horizontalScroll{
+	height : 10px;
+ 	bottom : 0px;
+ 	top : auto;
+ 	left : 0px ;
+ 	right : 0px;
+ 	bottom : 0px;
+ 	width : auto !important
+}
+.lyteScrollContainer div{
+	background: #888;
+	position : relative;
+	border-radius: 5px;
+}
+.lyteScrollContainer.verticalScroll div{
+	width:100% !important;
+}
+.lyteScrollContainer.horizontalScroll div{
+	height:100% !important;
+}
+.lyteScrollContainer div:hover{
+	background: #555;
+}
+.lyteScrollContainer.horizontalScroll.top{
+	top : 0px;
+ 	bottom : auto !important
+}
+.lyteScrollContainer.verticalScroll.left{
+	left : 0px;
+ 	right : auto !important
+}
+	               

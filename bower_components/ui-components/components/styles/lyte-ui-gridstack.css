@@ -1,0 +1,90 @@
+lyte-gridstack .lyteGridStackLeft{
+		    height: 100%;
+    		width: 15px;
+		    position: absolute !important;
+		    left: 0px;
+		    top: 0px;
+		    bottom: 15px;
+		    cursor: w-resize;
+		    z-index: 20;
+	}
+lyte-gridstack .lyteGridStackRight{
+		    height: 100%;
+    		width: 15px;
+		    position: absolute !important;
+		    right: 0px;
+		    top: 0px;
+		    bottom: 15px;
+		    cursor: e-resize;
+		     z-index: 20;
+	}
+lyte-gridstack .lyteGridStackBottom{
+		    height: 15px;
+    		width: 100%;
+		    position: absolute !important;
+		    left: 0px;
+		    bottom: 0px;
+		    cursor: s-resize;
+		     z-index: 18;
+	}
+lyte-gridstack .lyteGridStackBottomLeft{
+			height: 15px;
+			width: 15px;
+			bottom: 0px;
+			left: 0px;
+			cursor: sw-resize;
+			position: absolute !important;
+			z-index: 20;
+	}
+lyte-gridstack .lyteGridStackBottomRight{
+			height: 15px;
+			width: 15px;
+			bottom: 0px;
+			right: 0px;
+			cursor: se-resize;
+			position: absolute !important;
+			 z-index: 20;
+	}
+lyte-gridstack div.lyteBestFit{
+		border:black dotted;
+		z-index: 0;
+		position: absolute !important;
+		opacity: 0.4;
+
+	}
+lyte-grid-content{
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			position: absolute !important;
+	}
+lyte-gridstack {
+	display: block;
+	position: relative;
+}	
+
+.lyteGridstackHandler.selected.lyteSizeChange {
+	transition: width 0s, height 0s;
+}
+
+.lyteGridstackScope {
+	overflow-anchor : none;
+	overflow : hidden !important ;
+	outline : none;
+}
+
+.lyteGridstackHandler.items:not(.selected){
+	position: absolute;
+	transition-duration: 0.4s;
+	overflow: auto;
+	-ms-overflow-style: none;
+	cursor : move;
+}
+
+.lyteGridstackHandler.selected {
+	opacity: 0.4;
+	z-index: 90;
+	position: absolute;
+	cursor : move;
+}

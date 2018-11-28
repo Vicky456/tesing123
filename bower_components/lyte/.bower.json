@@ -1,0 +1,13 @@
+{
+  "name": "lyte",
+  "_cacheHeaders": {
+    "ETag": "\"b58af-5691672c121ea\"",
+    "Last-Modified": "Thu, 05 Apr 2018 09:20:19 GMT",
+    "Content-Length": "743599",
+    "Content-Type": "application/zip"
+  },
+  "_release": "e-tag:b58af-569",
+  "_source": "http://build/zoho/lyte/milestones/master/LYTE_V1_0_0/Lyte.zip",
+  "_target": "*",
+  "_originalSource": "http://build/zoho/lyte/milestones/master/LYTE_V1_0_0/Lyte.zip"
+}

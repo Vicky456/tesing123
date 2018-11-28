@@ -1,0 +1,18 @@
+<template tag-name="list-comp">
+<h1>hgsfjhsdhg</h1>
+    <template is="for" items="{{dataf}}" item="item" index="index">
+    <a href={{item.id}} target="_blank">{{item.email}}</a>
+    </template>
+
+    <a href="/">home</a>
+
+</template><template tag-name='welcome-comp'>
+	<h1>Available features of LYTE</h1>
+	<ul>	
+		<template is="for" items="{{features}}" item="item" index="index">
+			<li><a href={{item.url}} target="_blank">{{item.module}}</a></li>
+		</template>
+	</ul>
+
+
+</template>

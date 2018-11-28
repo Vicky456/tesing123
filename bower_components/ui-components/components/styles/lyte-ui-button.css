@@ -1,0 +1,121 @@
+/*Common button style*/
+lyte-button {
+	display: inline-block;
+}
+lyte-button button {
+	display: inline-block;
+    border-radius: 2px;
+    font-size: .929rem;	
+    padding: 7.5px 15px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-font-smoothing: auto;
+    font-family: "ProximaNovaRegular",arial,sans-serif;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+lyte-button button:disabled{
+	opacity: .5;
+	cursor: default;
+}
+/*Specific type*/
+lyte-button .lyteDefaultBtn{
+	background-color: #fff!important ;
+	color: #3c3c3c;
+	border: solid 1px #c4c4c4;
+}
+lyte-button .lytePrimaryBtn {
+	background-color: #42a2eb!important ;
+	color: #fff;
+	border: solid 1px #42a2eb;
+}
+lyte-button .lyteSecondary {
+    background-color: black!important ;
+    color: #fff;
+    border: solid 1px black;
+}
+lyte-button .lyteSuccess {
+	border: 1px solid #19bc7d;
+    background-color: #19bc7d;
+    color: white;
+}
+lyte-button .lyteFailure{
+	border: 1px solid #ec4844;
+    background-color: #ec4844;
+    color: white;
+}
+.lyteSuccess.lyteDefaultBtn{
+	color: #19bc7d;
+}
+.lyteFailure.lyteDefaultBtn{
+	color: #ec4844;
+}
+.lyteLg:not(.lyteIcon){
+	padding: 10px 16px;
+    font-size: 1.125em;
+    line-height: 1.3333333;
+}
+.lyteSm:not(.lyteIcon){	
+	padding: 5px 10px;
+    font-size: 0.750em;
+    line-height: 1.5;
+}
+.lyteExsm:not(.lyteIcon){
+	padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.lyteGroupBtn {
+	display: inline-block;
+}
+.lyteGroupBtn button.lyteDefaultBtn{
+	border: 1px solid #abaaaa;
+}
+.lyteGroupBtn button.lytePrimaryBtn{
+	border: solid 1px #3f89c1;
+}
+.lyteGroupBtn lyte-button:first-child button{
+	border-right: none;
+	border-radius: 2px 0 0 2px;
+}
+.lyteGroupBtn lyte-button:last-child button{
+	border-radius: 0 2px 2px 0;
+}
+.lyteGroupBtn lyte-button{
+	float: left;
+	display: inline-block;
+}
+
+/*Hover button*/	
+lyte-button button:hover{
+	border: 1px solid #abaaaa;
+    border-bottom: solid 1px #777;
+}
+.lytePrimaryBtn:hover{
+	border: 1px solid #3c98dd;
+	background-color: #3c98dd!important;
+    border-bottom: solid 1px #1b70b0!important;
+}
+.lyteFailure:hover{
+	border: 1px solid #f35652;
+	background-color: #f35652;
+    border-bottom: solid 1px #B11814;
+}
+.lyteFailure.lyteDefaultBtn:hover{
+	border: 1px solid #ec4844 !important;
+    background-color: #ec4844 !important;
+    color: white;
+    border-bottom: solid 1px #B11814 !important;
+}
+ .lyteSuccess.lyteDefaultBtn:hover{
+ 	background-color: #19bc7d !important;
+    color: #fff !important;
+    border-bottom: solid 1px #148157 !important;
+ }
+  .lyteSuccess:hover{
+  	border: 1px solid #19bc7d;
+ 	background-color: #19bc7d !important;
+    color: #fff !important;
+    border-bottom: solid 1px #148157 !important;
+ }

@@ -1,0 +1,248 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/input/input.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+
+@import (optional) "../themes/@{input}/ui-elements/input/input.variables.less";
+
+/* Loading custom themes */
+@import (optional) "../overrides/ui-elements/input/input.variables.less";
+
+
+lyte-input, .lyteInputBox, .lyteInputSearch {
+	.lyteInputBox();
+    position: relative;
+    width: @width;
+    padding: @padding;
+    cursor: @cursor;
+}
+lyte-input:not(.lyteInputBox) {
+	.lyteInputClass();
+    border-bottom: @borderBottom;
+}
+lyte-input.vertical{
+	.lyteInputVertical();
+    border-bottom: @borderBottom;
+}
+lyte-input.vertical > div {
+	.lyteInputVerticalField();
+    border-bottom: @borderBottom;
+}
+lyte-input.horizontal > label, lyte-input.horizontal > div, .lyteInputBox.horizontal > label, .lyteInputBox.horizontal > div{
+    display: inline-block;
+}
+
+lyte-input.vertical > label, lyte-input.vertical > div , .lyteInputBox.vertical > label, .lyteInputBox.vertical > div{
+    display: block;
+}
+lyte-input.vertical, .lyteInputBox.vertical {
+     .lyteInputBoxVerticalWhiteSpace();
+    white-space: @whiteSpace !important;
+}
+
+lyte-input.vertical > label , lyte-input.vertical > div,  .lyteInputBox.vertical > label, .lyteInputBox.vertical > div{
+    .lyteInputVerticalLabelWidth();
+    width: @width;
+}
+.lyteInputBox > div:after, lyte-input > div:after{
+	.lyteInputFieldAfter();
+    content: @content;
+    clear: @clear;
+    display: block;
+}
+
+lyte-input > label, .lyteInputBox > label {
+	 .lyteInputLabel();
+    box-sizing: @boxSizing;
+    -moz-box-sizing: @mozBoxSizing;
+    -webkit-box-sizing: @webkitBoxSizing;
+    -ms-box-sizing: @msBoxSizing;
+    padding: @padding;
+    color: @color;
+    display: inline-block;
+    width: @width;
+    padding-right: @paddingRight;
+    font-family: @fontFamily !important;
+    font-size: @fontSize;
+    word-wrap: @wordWrap;
+}
+lyte-input > div, .lyteInputBox > div {
+	   .lyteInputField();
+    color: @color;
+    width: @width;
+    vertical-align: @verticalAlign;
+    display: inline-block;
+    position: relative;
+    top: @top;
+    transition: @transition;
+    font-size: @fontSize;
+    word-wrap: @wordWrap;
+    font-family: @fontFamily !important;
+    box-sizing: @boxSizing;
+    -moz-box-sizing: @msBoxSizing;
+    -webkit-box-sizing: @webkitBoxSizing;
+    -ms-box-sizing: @msBoxSizing;
+}
+lyte-input > div.joinInput {
+    width: 100%;
+}
+lyte-input > div.joinInput input {
+	.lyteInputFieldJoinInputInput();
+    width: @width;
+    box-sizing: @boxSizing;
+    padding: @padding;
+}
+lyte-input > div {
+	 .lyteInputField2();
+    border-bottom: @borderBottom;
+    padding: @padding;
+}
+.lyteInputBox > div {
+	 .lyteInputBoxField();
+    border: @border;
+    border-top: @borderTop;
+    padding: @padding;
+    border-radius: @borderRadius;
+}
+.lyteInputBox > div.lyteInputBoxSearch{
+	.lyteInputBoxFieldBoxSearch();
+    padding:  @padding;
+}
+lyte-input > div input, .lyteInputBox > div input, lyte-input > div textarea, .lyteInputBox > div textarea {
+    .lyteInputFieldInputAndRTextarea();
+    width: @width;
+    color: @color;
+    font-size: @fontSize !important;
+    font-family: @fontFamily;
+    background-color: @backgroundColor;
+    padding: @padding;
+    border: @border !important;
+    box-shadow: @boxShadow !important;
+    margin-bottom: @marginBottom !important;
+    max-width: @maxWidth;
+    height: @height;
+    outline:@outline;
+}
+
+/*Input search */
+.lyteInputSearch, .lyteInputBoxSearch {
+		.lyteInputSearchAndBox();
+    color: @color;
+    width: @width;
+    vertical-align: @verticalAlign;
+    transition: @transition;
+    font-size: @fontSize;
+    word-wrap: @wordWrap;
+    font-family: @fontFamily !important;
+    box-sizing: @boxSizing;
+    -moz-box-sizing: @mozBoxSizing;
+    -webkit-box-sizing: @webkitBoxSizing;
+    -ms-box-sizing: @msBoxSizing;
+    position: relative;
+}
+.lyteInputSearch{
+	.lyteInputSearchBorder();
+    border-bottom: @borderBottom;
+    padding: @padding;
+}
+.lyteInputBoxSearch{
+	.lyteInputBoxSearch();
+    border: @border;
+    border-top: @borderTop;
+    padding: @padding;
+    border-radius: @borderRadius;
+}
+lyte-input[lt-prop-type="search"] span.searchIcon {
+	.lyteInputTypeSeacrhSearchIcon();
+    background: @background;
+    width: @width;
+    height: @height;
+    content: '';
+    position: absolute;
+    left: @left;
+    top: @top;
+    opacity: @opacity;
+}
+
+lyte-input[lt-prop-type="search"][lt-prop-appearance="flat"] span.searchIcon{
+	.lyteInputTypeSearchAppearanceFlatSearchIcon();
+    top:@top; 
+}
+
+lyte-input[lt-prop-type="search"][lt-prop-appearance="flat"] input{
+	.lyteInputTypeSearchAppearaneInput();
+    padding-left: @paddingLeft;
+}   
+
+.lyteInputSearch input, .lyteInputBoxSearch input{
+	   .lyteInputSearchInput();
+    width: @width;
+    color: @color;
+    font-size: @fontSize !important;
+    font-family: @fontFamily;
+    background-color: @backgroundColor;
+    padding: @padding;
+    border: @border !important;
+    box-shadow: @boxShadow !important;
+    margin-bottom: @marginBottom !important;
+    max-width: @maxWidth;
+    height: @height;
+    outline: @outline;
+}
+
+/*Hover css */
+.lyteInput:hover > div, .lyteInputBox:hover > div, .lyteInputSearch:hover {
+	.lyteInputHoverField();
+    border-bottom: @borderBottom;
+}
+lyte-input.lyteInputFocus {
+	.lyteInputFocus();
+    border-bottom: @borderBottom !important;
+}
+.lyteInputBox.lyteInputFocus {
+	 .lyteInputBocFocus();
+    border: @border !important;
+}
+.lytePreviewImage{
+	.lytePreviewImage();
+    height: @height;
+}
+.lyteFileUploadContainer .lyteFileList ul{
+		.lyteInputFileUploadContainerUl();
+    padding: @padding;
+    margin: @margin;
+    list-style: @listStyle;
+}
+
+  .lyteTextareaResize{
+  		.lyteInputTextareaResize();
+    position: absolute;
+    right: @right;
+    bottom: @bottom;
+    background: @background;
+    width: @width;
+    height: @height;
+    opacity: @opacity;
+    cursor: @cursor;
+}
+
+lyte-input{
+    display: inline-block;
+    width: inherit;
+}
+
+#lyteCalendar.lyteCalendarHidden {
+    display: none !important;
+}
+
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{input}/ui-elements/input/input.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/input.overrides.less";

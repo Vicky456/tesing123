@@ -1,0 +1,79 @@
+/* lyte gridstack */
+
+/* .lyteGridStackLeft */
+
+	.lyteGridstackLeft(){
+    		@width: 15px;
+		    @bottom: 15px;
+		    @cursor: w-resize;
+		    @zIndex: 20;
+	}
+
+/* .lyteGridStackRight */
+
+ 	 .lyteGridstackRight(){
+    		@width: 15px;
+		    @bottom: 15px;
+		    @cursor: e-resize;
+		    @zIndex: 20;
+	}	
+
+/*.lyteGridStackBottom */
+
+ 	.lyteGridStackBottom(){
+		    @height: 15px;
+		    @cursor: s-resize;
+		    @zIndex: 18;
+	}	
+
+/* .lyteGridStackBottomLeft */
+
+	.lyteGridStackBottomLeft(){
+			@height: 15px;
+			@width: 15px;
+			@cursor: sw-resize;
+			@zIndex: 20;
+	} 	
+
+/* .lyteGridStackBottomRight */
+
+ 	.lyteGridStackBottomRight(){
+		@height: 15px;
+		@width: 15px;
+		@cursor: se-resize;
+		@zIndex: 20;
+	}	
+
+/*  div.lyteBestFit */
+
+	.lyteGridstackBestfit(){
+		@border:black dotted;
+		@zIndex: 0;
+		@opacity: 0.4;
+
+	}	
+
+/* .lyteGridstackHandler.selected.lyteSizeChange */
+
+ .lyteGridstackSizeChange(){
+	@transition: width 0s, height 0s;
+}
+
+/* .lyteGridstackHandler.items:not(.selected) */
+
+.lyteGridstackHandlerNotSelected(){
+	position: absolute;
+	@transitionDuration: 0.4s;
+	overflow: auto;
+	-ms-overflow-style: none;
+	@cursor : move;
+}
+
+/* .lyteGridstackHandler.selected */
+
+ .lyteGridstackHandlerSelected(){
+	@opacity: 0.4;
+	@zIndex: 90;
+	position: absolute;
+	@cursor : move;
+}

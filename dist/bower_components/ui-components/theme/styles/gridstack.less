@@ -1,0 +1,133 @@
+/* Default theme imported */
+
+@import "../themes/default/ui-elements/gridstack/gridstack.variables.less";
+
+/* Loading theme in configuration */
+
+@import "../config.less";
+
+@import (optional) "../themes/@{gridstack}/ui-elements/gridstack/gridstack.variables.less";
+
+/* Loading custom themes */
+
+@import (optional) "../overrides/ui-elements/gridstack/gridstack.variables.less";
+
+/* Gridstack styles */
+
+.lyteGridStackLeft{
+	.lyteGridstackLeft();
+		    height: 100%;
+    		width: @width;
+		    position: absolute !important;
+		    left: 0px;
+		    top: 0px;
+		    bottom: @bottom;
+		    cursor: @cursor;
+		    z-index: @zIndex;
+	}
+
+ .lyteGridStackRight{
+ 	 .lyteGridstackRight();
+		    height: 100%;
+    		width: @width;
+		    position: absolute !important;
+		    right: 0px;
+		    top: 0px;
+		    bottom: @bottom;
+		    cursor: @cursor;
+		     z-index: @zIndex;
+	}
+
+ .lyteGridStackBottom{
+ 	.lyteGridStackBottom();
+		    height: @height;
+    		width: 100%;
+		    position: absolute !important;
+		    left: 0px;
+		    bottom: 0px;
+		    cursor: @cursor;
+		     z-index: @zIndex;
+	}
+
+.lyteGridStackBottomLeft{
+	.lyteGridStackBottomLeft();
+			height: @height;
+			width: @width;
+			bottom: 0px;
+			left: 0px;
+			cursor: @cursor;
+			position: absolute !important;
+			z-index: @zIndex;
+	}
+
+ .lyteGridStackBottomRight{
+ 	.lyteGridStackBottomRight();
+			height: @height;
+			width: @height;
+			bottom: 0px;
+			right: 0px;
+			cursor: @cursor;
+			position: absolute !important;
+			 z-index: @zIndex;
+	}
+
+ div.lyteBestFit{
+ 	  .lyteGridstackBestfit();
+		border : @border;
+		z-index: @zIndex;
+		position: absolute !important;
+		opacity: @opacity;
+
+	}
+
+ .lyteGridStackContent{
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			position: absolute !important;
+	}
+	
+lyte-gridstack {
+	display: block;
+	position: relative;
+}	
+
+.lyteGridstackHandler.selected.lyteSizeChange {
+	.lyteGridstackSizeChange();
+	transition: @transition;
+}
+
+.lyteGridstackScope {
+	overflow-anchor : none;
+	overflow : hidden !important;
+	outline : none;
+}
+
+.lyteGridstackHandler.items:not(.selected){
+	.lyteGridstackHandlerNotSelected();
+	position: absolute;
+	transition-duration: @transitionDuration;
+	overflow: auto;
+	-ms-overflow-style: none;
+	cursor : @cursor;
+}
+
+.lyteGridstackHandler.selected {
+	.lyteGridstackHandlerSelected();
+	opacity: @opacity;
+	z-index: @zIndex;
+	position: absolute;
+	cursor : @cursor;
+}
+
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{gridstack}/ui-elements/gridstack/gridstack.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/gridstack.overrides.less";
